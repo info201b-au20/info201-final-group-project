@@ -16,7 +16,7 @@ in the way we use social media compared to our parents.
 
 - [Oct 2018 Removed Domestic FB Pages Analytics 2011-2018](https://data.world/d1gi/historical-analytics-3-removed-domestic-fb-political-pages/workspace/file?filename=Oct+2018+Removed+Domestic+FB+Pages+Analytics+2011-2018.csv)
 
-- [Usage of social media by students between age 17-22](https://data.world/maheepmahat/data-of-usage-of-social-media-by-students-between-age-17-22https://query.data.world/s/li6543yzexo2kwmsbbuggjckbsqivl)
+- [Usage of social media by students between age 17-22](https://data.world/maheepmahat/data-of-usage-of-social-media-by-students-between-age-17-22)
 
 - [Internet users in the United States with accounts on selected social media platforms as of February 2018, by age group](https://www.statista.com/statistics/200548/users-with-social-site-accounts-by-age-group/)
 
