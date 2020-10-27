@@ -49,7 +49,7 @@ in the way we use social media compared to our parents.
 
 - This dataset does not answer any of the questions above, but it does talk about data of “spam” political Facebook pages. Specifically data about the interactions and how “popular” those pages got throughout the years.
 
-**Data source 2:** [Usage of social media by students between age 17-22](https://data.world/maheepmahat/data-of-usage-of-social-media-by-students-between-age-17-22https://query.data.world/s/li6543yzexo2kwmsbbuggjckbsqivl)
+**Data source 2:** [Usage of social media by students between age 17-22](https://data.world/maheepmahat/data-of-usage-of-social-media-by-students-between-age-17-22)
 
 **How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?:**
 
