@@ -1,0 +1,16 @@
+---
+title: "Exploratory Anaylsis Report"
+output: html_document
+---
+
+
+Introductory paragraph:
+
+
+Summary paragraph:
+
+
+Render the table here and describe pertinent observations found in it
+
+
+Describe the purpose of each chart (e.g., "this chart was intended to show the relationship between..."), render each chart, and describe pertinent observations found in each chart
