@@ -34,10 +34,8 @@ newDF$Hours_spent_on_social_media_in_a_day <- str_replace(newDF$Hours_spent_on_s
 newDF$Hours_spent_on_social_media_in_a_day <- str_replace(newDF$Hours_spent_on_social_media_in_a_day,"upto 4 hrs","4")
 
 
-agestable <- newDF %>%
-  group_by(Age) %>% 
-  filter(Social_media_accounts == "Youtube")
-  
+newDF <- newDF %>% 
+  arrange(Hours_spent_on_social_media_in_a_day)
   
 
 
