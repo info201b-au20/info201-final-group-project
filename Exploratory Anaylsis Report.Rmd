@@ -44,17 +44,19 @@ output: html_document
 
 **Effects of Social Media Table data:**
 
+```{r echo=FALSE,message=FALSE}
+source("scripts/Table of Summary Information.R")
+```
+
 The table below shows the changes we made to the original dataset and we decided to keep the columns:
+
 `r colnames(newDF)` in our new table
 
 ```{r echo=FALSE, message=FALSE}
 library(knitr)
-source("scripts/Table of Summary Information.R")
 kable(newDF)
 ```
 
-The table below shows the changes we made to the original dataset and we decided to keep the columns:
-`r colnames(newDF)` in our new table
 
 
 
