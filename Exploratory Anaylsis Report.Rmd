@@ -31,13 +31,13 @@ output: html_document
 
 
 **Chart 1:**
-
+```{r echo=FALSE,message=FALSE}
 source("scripts/First Chart.R")
-
+```
 **Chart 2:**
-
+```{r echo=FALSE,message=FALSE}
 source("scripts/Second Chart.R")
-
+```
 **Chart 3:**
 
 
