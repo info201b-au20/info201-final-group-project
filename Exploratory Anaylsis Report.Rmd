@@ -41,7 +41,6 @@ output: html_document
 **Chart 3:**
 
 
-
 **Effects of Social Media Table data:**
 
 ```{r echo=FALSE,message=FALSE}
@@ -50,7 +49,13 @@ source("scripts/Table of Summary Information.R")
 
 The table below shows the changes we made to the original dataset and we decided to keep the columns:
 
-`r colnames(newDF)` in our new table
+* *Age:* The age of each survey participant
+
+* *Social_media_accounts:* Social media accounts of each participant
+
+* *Hours_spent_on_social_media_in_a_day:* The amount of hours spent on social media in a day
+
+* *Preferred_type_of_communication:* How they wish to communicate with others
 
 ```{r echo=FALSE, message=FALSE}
 library(knitr)
