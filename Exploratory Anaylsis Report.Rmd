@@ -32,11 +32,11 @@ output: html_document
 
 **Chart 1:**
 
-
+source("scripts/First Chart.R")
 
 **Chart 2:**
 
-
+source("scripts/Second Chart.R")
 
 **Chart 3:**
 
