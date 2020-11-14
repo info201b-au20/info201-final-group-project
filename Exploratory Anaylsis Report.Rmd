@@ -1,16 +1,63 @@
+
 ---
 title: "Exploratory Anaylsis Report"
+
+date: "11/13/2020"
+
 output: html_document
 ---
 
 
-Introductory paragraph:
+
+**Main field/domain:** How different age groups use social media.
+
+**Why are you interested in this field/domain:** It is personal to us, it is how we communicate to people consistently. Social media is something that us as a society uses everyday, regardless of their age. We are intrigued by the differences in how people use social media depending on their age because we know first hand experience the differences in the way we use social media compared to our parents.
 
 
-Summary paragraph:
 
 
-Render the table here and describe pertinent observations found in it
+
+[View Dataset](https://raw.githubusercontent.com/info201b-au20/info201-final-group-project/gh-pages/Effects%20of%20Social%20Media%20(Responses).csv)
 
 
-Describe the purpose of each chart (e.g., "this chart was intended to show the relationship between..."), render each chart, and describe pertinent observations found in each chart
+
+
+
+
+
+**Summary paragraph:**
+
+
+
+
+**Chart 1:**
+
+
+
+**Chart 2:**
+
+
+
+**Chart 3:**
+
+
+
+**Effects of Social Media Table data:**
+
+The table below shows the changes we made to the original dataset and we decided to keep the columns:
+`r colnames(newDF)` in our new table
+
+```{r echo=FALSE, message=FALSE}
+library(knitr)
+source("scripts/Table of Summary Information.R")
+kable(newDF)
+```
+
+The table below shows the changes we made to the original dataset and we decided to keep the columns:
+`r colnames(newDF)` in our new table
+
+
+
+
+
+
