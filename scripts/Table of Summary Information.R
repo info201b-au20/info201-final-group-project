@@ -33,15 +33,22 @@ newDF$Hours_spent_on_social_media_in_a_day <- str_replace(newDF$Hours_spent_on_s
 #Users that spent upto 4 hours on social media is now displayed in the table as just the number 4.
 newDF$Hours_spent_on_social_media_in_a_day <- str_replace(newDF$Hours_spent_on_social_media_in_a_day,"upto 4 hrs","4")
 
-
-agestable <- newDF %>%
+#Age groups that reported spending more than 4 hours a day on social media
+four_plus_hours <- newDF %>%
   group_by(Age) %>% 
-  filter(Social_media_accounts == "Youtube")
-  
-  
+  filter(Hours_spent_on_social_media_in_a_day == "4+") %>% 
+  distinct(Age) 
+
+#Age groups who only preferred face to face communication
+facetoface <- newDF %>% 
+  group_by(Age) %>% 
+  filter(Preferred_type_of_communication == "face to face") %>% 
+  distinct(Age)
 
 
-  
+
+
+
   
   
 

@@ -34,8 +34,6 @@ newDF$Hours_spent_on_social_media_in_a_day <- str_replace(newDF$Hours_spent_on_s
 newDF$Hours_spent_on_social_media_in_a_day <- str_replace(newDF$Hours_spent_on_social_media_in_a_day,"upto 4 hrs","4")
 
 #CODE ABOVE FROM Table of Summary Information
-
-  
   
 summary_info <- list()
     #number of participants
