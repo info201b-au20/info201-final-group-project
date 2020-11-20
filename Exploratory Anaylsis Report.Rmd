@@ -33,32 +33,33 @@ source("scripts/Third Chart.R")
 
 
 **Chart 1:**
-
-
-
+```{r echo=FALSE, message=FALSE}
+source("scripts/First Chart.R")
+```
 **Chart 2:**
 
 
 
 
 
-This simple scatter plot gives a precise visual about how different age groups 
-ranging from 14-23 use social media to communicate. This chart was used to show
-the preferred methods of communnication because it shows more than one way an 
-an age group preffered to communicate. This makes it easier to see the trend of 
-coommunnication between different age groups. The trend of this chart shows that
-people between the ages of 18 - 19 prefer all the types of communication methods
-while age groups beteween 14- 16, and 21-3 tend to prefer half or less than half
-to communicate. The differennt preferred types of communicationn types go up 
-with age then slowly go back down after the age of 20. 
 
-```{r pref_type, echo=FALSE} 
+This simple scatter plot gives a precise visual about how different age groups
+ranging from 14-23 use social media to communicate. This chart was used to show
+the preferred methods of communication because it shows more than one way an
+an age group preferred to communicate. This makes it easier to see the trend of
+communication between different age groups. The trend of this chart shows that
+people between the ages of 18 - 19 prefer all the types of communication methods
+while age groups between 14- 16, and 21-3 tend to prefer half or less than half
+to communicate. The different preferred types of communication types go up
+with age then slowly go back down after the age of 20.
+
+```{r pref_type, echo=FALSE}
 plot(pref_type)
 ```
 
 **Effects of Social Media Table data:**
 
-```{r echo=FALSE,message=FALSE}
+```{r echo=FALSE, message=FALSE}
 source("scripts/Table of Summary Information.R")
 ```
 
@@ -76,10 +77,3 @@ The table below shows the changes we made to the original dataset and we decided
 library(knitr)
 kable(newDF)
 ```
-
-
-
-
-
-
-
