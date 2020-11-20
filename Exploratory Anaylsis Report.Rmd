@@ -6,7 +6,9 @@ date: "11/13/2020"
 
 output: html_document
 ---
-
+```{r echo=FALSE,message=FALSE}
+source("scripts/Third Chart.R")
+```
 
 
 **Main field/domain:** How different age groups use social media.
@@ -31,19 +33,33 @@ output: html_document
 
 
 **Chart 1:**
-
-
-
+```{r echo=FALSE, message=FALSE}
+source("scripts/First Chart.R")
+```
 **Chart 2:**
 
 
 
-**Chart 3:**
 
+
+
+This simple scatter plot gives a precise visual about how different age groups
+ranging from 14-23 use social media to communicate. This chart was used to show
+the preferred methods of communication because it shows more than one way an
+an age group preferred to communicate. This makes it easier to see the trend of
+communication between different age groups. The trend of this chart shows that
+people between the ages of 18 - 19 prefer all the types of communication methods
+while age groups between 14- 16, and 21-3 tend to prefer half or less than half
+to communicate. The different preferred types of communication types go up
+with age then slowly go back down after the age of 20.
+
+```{r pref_type, echo=FALSE}
+plot(pref_type)
+```
 
 **Effects of Social Media Table data:**
 
-```{r echo=FALSE,message=FALSE}
+```{r echo=FALSE, message=FALSE}
 source("scripts/Table of Summary Information.R")
 ```
 
@@ -67,10 +83,3 @@ on social media and communicate with others face to face.**
 library(knitr)
 kable(FinalDF)
 ```
-
-
-
-
-
-
-

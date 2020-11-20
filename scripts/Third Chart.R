@@ -13,9 +13,9 @@ newDF <- originalDF %>%
   select(Age,Social_media_accounts,Time_spent_on_social_media_in_a_day,Preferred_type_of_communication) %>% 
   group_by(Age)
 
-ggplot(data = newDF) +
+pref_type <- ggplot(data = newDF) +
   geom_point(mapping = aes(x = Age, y = Preferred_type_of_communication)) +
-  labs(title = "Preferred type of Cummunication by Age groups")
+  labs(y=  "Communnication Methods", title = "Preferred Method by Age Groups")
    
 #why? 
 #This simple scatter plot expresses how different age groups use social media to communicate.
