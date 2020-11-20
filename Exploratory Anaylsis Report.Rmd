@@ -47,7 +47,7 @@ output: html_document
 source("scripts/Table of Summary Information.R")
 ```
 
-The table below shows the changes we made to the original dataset and we decided to keep the columns:
+The table below shows the changes we made to the original dataset keeping columns:
 
 * *Age:* The age of each survey participant
 
@@ -57,9 +57,15 @@ The table below shows the changes we made to the original dataset and we decided
 
 * *Preferred_type_of_communication:* How they wish to communicate with others
 
+
+
+
+**The current dataset now shows ages of individual people who reported spending more than 4 hours a day 
+on social media and communicate with others face to face.**
+
 ```{r echo=FALSE, message=FALSE}
 library(knitr)
-kable(newDF)
+kable(FinalDF)
 ```
 
 

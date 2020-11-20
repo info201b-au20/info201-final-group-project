@@ -39,11 +39,17 @@ four_plus_hours <- newDF %>%
   filter(Hours_spent_on_social_media_in_a_day == "4+") %>% 
   distinct(Age) 
 
-#Age groups who only preferred face to face communication
-facetoface <- newDF %>% 
-  group_by(Age) %>% 
+#Age groups who reported that they spent more than 4 hours and only preferred face to face communication
+FinalDF <- newDF %>% 
   filter(Preferred_type_of_communication == "face to face") %>% 
-  distinct(Age)
+  filter(Hours_spent_on_social_media_in_a_day == "4+")
+
+  
+
+
+  
+
+  
 
 
 
