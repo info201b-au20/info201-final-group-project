@@ -7,7 +7,11 @@ date: "11/13/2020"
 output: html_document
 ---
 ```{r echo=FALSE,message=FALSE}
+library(knitr)
 source("scripts/Third Chart.R")
+source("scripts/Table of Summary Information.R")
+```
+
 ```
 
 
@@ -42,7 +46,7 @@ source("scripts/First Chart.R")
 
 
 
-
+**Chart 3:**
 This simple scatter plot gives a precise visual about how different age groups
 ranging from 14-23 use social media to communicate. This chart was used to show
 the preferred methods of communication because it shows more than one way an
@@ -57,29 +61,22 @@ with age then slowly go back down after the age of 20.
 plot(pref_type)
 ```
 
+
 **Effects of Social Media Table data:**
 
-```{r echo=FALSE, message=FALSE}
-source("scripts/Table of Summary Information.R")
-```
-
-The table below shows the changes we made to the original dataset keeping columns:
-
-* *Age:* The age of each survey participant
-
-* *Social_media_accounts:* Social media accounts of each participant
-
-* *Hours_spent_on_social_media_in_a_day:* The amount of hours spent on social media in a day
-
-* *Preferred_type_of_communication:* How they wish to communicate with others
+We decided to display two tables. The first shows the **Mean of Hours** spent and the second shows the **Total Hours** Spent
 
 
 
-
-**The current dataset now shows ages of individual people who reported spending more than 4 hours a day 
-on social media and communicate with others face to face.**
+The table below groups the ages reported and calulates the **mean of hours** spent in each group
 
 ```{r echo=FALSE, message=FALSE}
-library(knitr)
-kable(FinalDF)
+kable(mean_Hours)
 ```
+
+The table below groups the ages reported and calulates the **total amount** of hours spent in each group 
+```{r echo=FALSE, message=FALSE}
+kable(total_Hours)
+```
+
+

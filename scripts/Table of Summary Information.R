@@ -22,7 +22,7 @@ newDF$Hours_spent_on_social_media_in_a_day <- str_replace(newDF$Hours_spent_on_s
 
 #Users with more than 4 hours is displayed in the table as 4+ the plus sign indicates that the number
 #of hours spent is greater than 4
-newDF$Hours_spent_on_social_media_in_a_day <- str_replace(newDF$Hours_spent_on_social_media_in_a_day,"more than 4 hrs","4+") 
+newDF$Hours_spent_on_social_media_in_a_day <- str_replace(newDF$Hours_spent_on_social_media_in_a_day,"more than 4 hrs","4") 
 
 #Since we wanted to make are table more readable and understandable when looking at the data & charts we decided
 #to take the number between 1 - 2.5 hours that every user said they spent on social media in a day which is 1.75 but when 
@@ -33,18 +33,22 @@ newDF$Hours_spent_on_social_media_in_a_day <- str_replace(newDF$Hours_spent_on_s
 #Users that spent upto 4 hours on social media is now displayed in the table as just the number 4.
 newDF$Hours_spent_on_social_media_in_a_day <- str_replace(newDF$Hours_spent_on_social_media_in_a_day,"upto 4 hrs","4")
 
-#Age groups that reported spending more than 4 hours a day on social media
-four_plus_hours <- newDF %>%
-  group_by(Age) %>% 
-  filter(Hours_spent_on_social_media_in_a_day == "4+") %>% 
-  distinct(Age) 
+#Converts strings to integers
+newDF$Hours_spent_on_social_media_in_a_day <- as.integer(newDF$Hours_spent_on_social_media_in_a_day)
 
-#Age groups who reported that they spent more than 4 hours and only preferred face to face communication
-FinalDF <- newDF %>% 
-  filter(Preferred_type_of_communication == "face to face") %>% 
-  filter(Hours_spent_on_social_media_in_a_day == "4+")
 
-  
+#Calculates the mean for hours that each age group reported spending from the newDF dataframe
+mean_Hours <- newDF %>%  
+  group_by(Age) %>%
+  summarise(Mean_Hours_Spent_For_Each_Age = as.integer(mean(Hours_spent_on_social_media_in_a_day)))
+
+#Calculates the total hours spent of each age group from the newDF dataframe
+total_Hours <- newDF %>%  
+  group_by(Age) %>%
+  summarise(Total_Hours_Spent_For_Each_Age = sum(Hours_spent_on_social_media_in_a_day))
+
+
+
 
 
   
