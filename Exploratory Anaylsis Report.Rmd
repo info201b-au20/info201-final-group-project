@@ -45,13 +45,18 @@ The chart tells us that there is no correlation between the number of hours spen
 vs the number of hours spent on physical activity. While the hours on social media line
 shows and upward trend (becuase we ordered it that way), the hours of physical activity line is 
 unpredictable and sporratic showing no discernible trends or patterns
-
+```{r socialmedia_vs_exercise, echo=FALSE}
+plot(socialmedia_vs_exercise)
+```
 
 **Chart 2:**
 We included the chart to show on average how much time college aged students spend on social media per day
 The chart tells us that almost no college aged students (undergrad) spend *NO* time on social media.
 The chart also tell us that about two thirds of college aged students (undergrad) spend what we'd call a reasonable
 amount of time on social media per day. The other third spend an excessive amount of time on social media
+```{r effects, echo=FALSE}
+plot(effects)
+```
 
 **Chart 3:**
 This simple scatter plot gives a precise visual about how different age groups

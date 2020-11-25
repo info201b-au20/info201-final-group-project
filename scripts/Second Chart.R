@@ -14,7 +14,7 @@ new_dataframe <- dataframe %>%
   select(Age,Social_media_accounts,Time_spent_on_social_media_in_a_day,Preferred_type_of_communication) %>% 
   group_by(Age)
 
-ggplot(new_dataframe, aes(x = Time_spent_on_social_media_in_a_day)) +
+effects <- ggplot(new_dataframe, aes(x = Time_spent_on_social_media_in_a_day)) +
     geom_bar() +
   labs(title = "Time Spent on Social Media Per Day", x = "range of hours", y = "frequency")
   
@@ -22,4 +22,4 @@ ggplot(new_dataframe, aes(x = Time_spent_on_social_media_in_a_day)) +
 
 # The chart tells us that almost no college aged students (undergrad) spend *NO* time on social media.
 # The chart also tell us that about two thirds of college aged students (undergrad) spend what we'd call a reasonable
-# amount of time on social media per day. The other third spend an excessive amount of time on social medai
+# amount of time on social media per day. The other third spend an excessive amount of time on social media
