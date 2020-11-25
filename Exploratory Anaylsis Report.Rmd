@@ -86,7 +86,7 @@ The table below groups the ages reported and calulates the **mean of hours** spe
 kable(mean_Hours)
 ```
 
-The table below groups the ages reported and calulates the **total amount** of hours spent in each group 
+The table below groups the ages reported and calulates the **total amount of hours** spent in each group 
 ```{r echo=FALSE, message=FALSE}
 kable(total_Hours)
 ```
