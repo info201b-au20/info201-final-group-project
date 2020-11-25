@@ -8,6 +8,8 @@ output: html_document
 ---
 ```{r echo=FALSE,message=FALSE}
 library(knitr)
+source("scripts/First Chart.R")
+source("scripts/Second Chart.R")
 source("scripts/Third Chart.R")
 source("scripts/Table of Summary Information.R")
 ```
@@ -37,14 +39,19 @@ source("scripts/Table of Summary Information.R")
 
 
 **Chart 1:**
-```{r echo=FALSE, message=FALSE}
-source("scripts/First Chart.R")
-```
+We included this line graph gives us a visual of hours spent on social media per day
+and hours spent on physical activity per day for age groups 14-23.
+The chart tells us that there is no correlation between the number of hours spent on social media
+vs the number of hours spent on physical activity. While the hours on social media line
+shows and upward trend (becuase we ordered it that way), the hours of physical activity line is 
+unpredictable and sporratic showing no discernible trends or patterns
+
+
 **Chart 2:**
-
-
-
-
+We included the chart to show on average how much time college aged students spend on social media per day
+The chart tells us that almost no college aged students (undergrad) spend *NO* time on social media.
+The chart also tell us that about two thirds of college aged students (undergrad) spend what we'd call a reasonable
+amount of time on social media per day. The other third spend an excessive amount of time on social media
 
 **Chart 3:**
 This simple scatter plot gives a precise visual about how different age groups
