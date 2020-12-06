@@ -86,6 +86,9 @@ with age then slowly go back down after the age of 20.")),
         )
     )
 )
+Conclusion_Page <- tabPanel(
+  "Conclusion"
+)
 ui <- fluidPage(
   navbarPage(
     "Application",

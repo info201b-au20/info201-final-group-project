@@ -1,13 +1,14 @@
 #Packages used
-library()
-
+library(plotly)
+library(shiny)
+library(ggplot2)
 
 #Source files
 source("app_UI.R")
 source("app_Server.R")
 
 
-library(shiny)
+
 
 
 shinyApp(ui, server)
