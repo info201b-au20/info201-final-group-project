@@ -1,6 +1,6 @@
 library(shiny)
 
-page_one <- tabPanel(
+Intro_page <- tabPanel(
   "Introductory page",
   sidebarLayout(
     sidebarPanel(
@@ -12,7 +12,7 @@ page_one <- tabPanel(
   )
 )
   
-page_two <- tabPanel(
+Interactive_Page_1 <- tabPanel(
   "Interactive Page 1",
   sidebarLayout(
     sidebarPanel(
@@ -24,10 +24,48 @@ page_two <- tabPanel(
   )
 )
 
+Interactive_Page_2 <- tabPanel(
+  "Interactive Page 2",
+  sidebarLayout(
+    sidebarPanel(
+      
+    ),
+    mainPanel(
+      
+    )
+  )
+)
+
+Interactive_Page_3 <- tabPanel(
+  "Interactive Page 3",
+  sidebarLayout(
+    sidebarPanel(
+      
+    ),
+    mainPanel(
+      
+    )
+  )
+)
+
+Conclusion_Page <- tabPanel(
+  "Conclusion",
+  sidebarLayout(
+    sidebarPanel(
+      
+    ),
+    mainPanel(
+      
+    )
+  )
+)
 ui <- fluidPage(
   navbarPage(
     "Application",
-    page_one,
-    page_two
+    Intro_page,
+    Interactive_Page_1,
+    Interactive_Page_2,
+    Interactive_Page_3,
+    Conclusion_Page
   )
 )
