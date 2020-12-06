@@ -2,15 +2,9 @@ library(shiny)
 
 Intro_page <- tabPanel(
   "Introductory page",
-  sidebarLayout(
-    sidebarPanel(
-        
-    ),
-    mainPanel(
-        
-    )
-  )
+  
 )
+
   
 Interactive_Page_1 <- tabPanel(
   "Interactive Page 1",
