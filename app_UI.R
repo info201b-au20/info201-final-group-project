@@ -49,7 +49,7 @@ Intro_page <- tabPanel(
                     "Click here to view the raw data from the dataset used for are visualizations"),
       shiny::tags$br(),
       shiny::tags$br(),
-      p("Questions we seek to answer throught the project:"),
+      p(strong("Questions we seek to answer throughout the project:")),
       ulList,
       shiny::tags$img(src = "https://belatina.com/wp-content/uploads/2020/06/thumbs_b_c_d5bcace83abc78617d9aecb992d4b4f8.jpg")
 
