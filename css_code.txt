@@ -1,0 +1,32 @@
+
+h2 {
+  border-style: inset;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #ad1d28;
+}
+
+.navbar-default {
+  background-color: lightblue;
+}
+
+p {
+  font-family: arial;
+  
+}
+
+li{
+  font-family: "Papyrus", Fantasy;
+  font-size: 18px;
+  color: #4d3a7d;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+

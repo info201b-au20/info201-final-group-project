@@ -2,6 +2,7 @@ library(shiny)
 library(plotly)
 library(tidyverse) 
 library("RColorBrewer")
+library(shinyWidgets)
 
 originalDF <- read.csv("https://raw.githubusercontent.com/info201b-au20/info201-final-group-project/gh-pages/Effects%20of%20Social%20Media%20(Responses).csv")
 
@@ -26,15 +27,36 @@ color_input <- selectInput(
     choices = c("red", "green", "blue", "black", "purple")
 )
 
-
-Intro_page <- tabPanel(
-  "Introductory page",
-  
+ulList <-  shiny::tags$ol(
+  shiny::tags$li("While using various social media, how does everyone stay in touch with each other?"),
+  shiny::tags$li("Which social media platforms are most popular?"),
+  shiny::tags$li("What age group spends the most time on social media throughout the day?"),
+  shiny::tags$li("How much time is spent on physical activities?")
 )
+Intro_page <- tabPanel(
+      titlePanel("Intro Page"),
+      setBackgroundColor("lightblue"),
+      includeCSS("css_code.txt"),
+      shiny::tags$h2("Social Media Studies"),
+      shiny::tags$p("We all use social media nowadays. Well, maybe not everyone, but at least a huge amount of the population 
+      does. Social networks have opened new horizons of devising and learning new information, sharing ideas, and connecting 
+      with others. Social media has notably changed the way people interact and carry on with their everyday lives on social 
+      networks. People using the internet spend most of their time on social media sites. The only thing that matters is where 
+      people invest their time and attention. In this project, we will be focusing on the different age groups' use of 
+      various social media platforms, how they communicate and connect with each other, and how much time is spent on social media 
+      throughout the day."),
+      shiny::tags$a(href="https://raw.githubusercontent.com/info201b-au20/info201-final-group-project/gh-pages/Effects%20of%20Social%20Media%20(Responses).csv", 
+                    "Click here to view the raw data from the dataset used for are visualizations"),
+      shiny::tags$br(),
+      shiny::tags$br(),
+      p("Questions we seek to answer throught the project:"),
+      ulList,
+      shiny::tags$img(src = "https://belatina.com/wp-content/uploads/2020/06/thumbs_b_c_d5bcace83abc78617d9aecb992d4b4f8.jpg")
 
+)
   
 Interactive_Page_1 <- tabPanel(
-  "Interactive Page 1",
+  titlePanel("Interactive Page 1"),
   sidebarLayout(
     sidebarPanel(
         
@@ -46,7 +68,7 @@ Interactive_Page_1 <- tabPanel(
 )
 
 Interactive_Page_2 <- tabPanel(
-  "Interactive Page 2",
+  titlePanel("Interactive Page 2"),
   sidebarLayout(
     sidebarPanel(
       
@@ -87,7 +109,7 @@ with age then slowly go back down after the age of 20.")),
     )
 )
 Conclusion_Page <- tabPanel(
-  "Conclusion"
+  titlePanel("Conclusion")
 )
 ui <- fluidPage(
   navbarPage(

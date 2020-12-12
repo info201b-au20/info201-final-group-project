@@ -1,7 +1,11 @@
 #Packages used
-library(plotly)
 library(shiny)
+library(plotly)
+library(tidyverse)
 library(ggplot2)
+library(shinyWidgets)
+library("RColorBrewer")
+
 
 #Source files
 source("app_UI.R")
