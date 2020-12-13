@@ -10,7 +10,7 @@ originalDF <- read.csv("https://raw.githubusercontent.com/info201b-au20/info201-
 new_dataframe <- originalDF %>% #changed "dataframe" to "originalDF"
   rename(Age = "What.is.your.age.",
          Social_media_accounts = "Which.social.media.platform.s.do.you.like.the.most.or.use.the.most.",
-         Time_spent_on_physical_activities_in_a_day = "How.much.time.do.you.spend.on.physical.activities.in.a.day.",,
+         Time_spent_on_physical_activities_in_a_day = "How.much.time.do.you.spend.on.physical.activities.in.a.day.",
          Time_spent_on_social_media_in_a_day = "How.much.time.do.you.spend.on.social.media.in.a.day.") %>% 
   select(Age,Social_media_accounts,Time_spent_on_physical_activities_in_a_day,Time_spent_on_social_media_in_a_day) %>% 
   group_by(Age)
@@ -47,10 +47,10 @@ socialmedia_vs_exercise <- ggplot(new_dataframe, aes(x = id)) +
   scale_color_manual(values = c("darkred", "steelblue"), labels = c("Hours on social media", "Hours on physical activity")) +
   labs(title = "Social media use vs physical activity", x = "Survey Entry ID (ordered from least to greatest by hours on social media)", y = "Hours")
 
-socialmedia_vs_exercise <- plotly_build(socialmedia_vs_exercise)
-socialmedia_vs_exercise$x$data[[1]]$name <- "Time on social media"
-socialmedia_vs_exercise$x$data[[2]]$name <- "Time on physical activity"
-
+  socialmedia_vs_exercise <- plotly_build(socialmedia_vs_exercise)
+  socialmedia_vs_exercise$x$data[[1]]$name <- "Time on social media"
+  socialmedia_vs_exercise$x$data[[2]]$name <- "Time on physical activity"
+  
 ####################################Chart2#######################################################################
 new_dataframe <- originalDF %>% #changed "dataframe" to "originalDF"
   rename(Age = "What.is.your.age.",
