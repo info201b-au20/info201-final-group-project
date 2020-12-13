@@ -92,8 +92,7 @@ color_input <- selectInput(
 ulList <-  shiny::tags$ol(
   shiny::tags$li("While using various social media, how does everyone stay in touch with each other?"),
   shiny::tags$li("Which social media platforms are most popular?"),
-  shiny::tags$li("What age group spends the most time on social media throughout the day?"),
-  shiny::tags$li("How much time is spent on physical activities?")
+  shiny::tags$li("What age group spends the most time on social media throughout the day?")
 )
 
 Intro_page <- tabPanel(
@@ -162,8 +161,8 @@ with age then slowly go back down after the age of 20.")),
             p(plotlyOutput("chart")),
             selectInput(
                 "x_input",
-                label = "set age",
-                choices = age,
+                label = "set x-axis",
+                choices = c("Age","Time_spent_on_social_media_in_a_day"),
                 selected = "What.is.your.age."
             ),
             selectInput(
@@ -193,7 +192,7 @@ Conclusion_Page <- tabPanel(
     only use social media. To communicate, people also use text, call, and 
     communicate with people face to face."),
  
-   h1("Which social media platforms are most popular?"),
+   h1("Which social media platforms are the most popular?"),
   p("The data shows that the populatity of varius social media platforms change
   depending on the age range that you are looking at. But overall, the social 
   media platform that is the most popular is _____________.
@@ -201,7 +200,7 @@ Conclusion_Page <- tabPanel(
 
     h1("What age group spends the most time on social media throughout the day
        "),
-  p("The age group that spends the msot time on social media throughout the day
+  p("The age group that spends the most time on social media throughout the day
   is _____________. 
     "),
 
