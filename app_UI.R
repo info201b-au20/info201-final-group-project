@@ -59,7 +59,7 @@ new_dataframe <- originalDF %>% #changed "dataframe" to "originalDF"
          Time_spent_on_social_media_in_a_day = "How.much.time.do.you.spend.on.social.media.in.a.day.",
          Time_spent_on_physical_activities_in_a_day = "How.much.time.do.you.spend.on.physical.activities.in.a.day.",
          Preferred_type_of_communication = "Which.type.of.communication.do.you.generally.prefer.") %>% 
-  select(Age,Social_media_accounts,Time_spent_on_social_media_in_a_day,Preferred_type_of_communication, Time_spent_on_physical_activities_in_a_day) %>% 
+  select(Age,Social_media_accounts,Time_spent_on_social_media_in_a_day,Preferred_type_of_communication,Time_spent_on_physical_activities_in_a_day) %>% 
   group_by(Age)
   
 
@@ -126,9 +126,9 @@ Interactive_Page_2 <- tabPanel(
     mainPanel(
       plotlyOutput("effects"),
       selectInput(
-      inputId = "x_axis",
-      label = "Change x-axis",
-      choices = c("Time_spent_on_social_media_in_a_day","Time_spent_on_physical_activities_in_a_day")
+        "x_axis",
+        label = "Change x-axis",
+        choices = c("Time_spent_on_physical_activities_in_a_day","Time_spent_on_social_media_in_a_day")
       )
     )
   )

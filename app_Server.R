@@ -17,11 +17,11 @@ server <- function(input, output, session) {
 		
 })
 	output$effects <- renderPlotly({ 
-		ggplot(new_dataframe, aes(x = input$x_axis)) +
+	  effects <- ggplot(new_dataframe, aes_string(x = input$x_axis)) +
 			geom_bar() +
-			labs(title = "Time Spent on Social Media Per Day", x = "range of hours", y = "frequency")
+			labs(title = "Time spent on social media", xlab(label = "range of hours"), ylab(label = "frequency"))
   
-		effects <- ggplotly(effects)
+		ggplotly(effects)
 	})
 	output$chart <- renderPlotly({ 
 		chart <- ggplot(data = newDF) +

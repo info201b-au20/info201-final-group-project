@@ -1,4 +1,4 @@
-#Packages usedgit 
+#Packages used
 library(shiny)
 library(plotly)
 library(tidyverse)
