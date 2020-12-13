@@ -41,6 +41,7 @@ new_dataframe <- arrange(new_dataframe, Time_spent_on_social_media_in_a_day)
 #Add column for row number
 new_dataframe$id <- seq.int(nrow(new_dataframe))
 
+<<<<<<< HEAD
 socialmedia_vs_exercise <- ggplot(new_dataframe, aes(x = id)) + 
   geom_line(aes(y = Time_spent_on_social_media_in_a_day, color = "darkred"), size = 3) + 
   geom_point(aes(y = Time_spent_on_physical_activities_in_a_day, color="steelblue"), size = 2) +
@@ -51,6 +52,9 @@ socialmedia_vs_exercise <- ggplot(new_dataframe, aes(x = id)) +
   socialmedia_vs_exercise$x$data[[1]]$name <- "Time on social media"
   socialmedia_vs_exercise$x$data[[2]]$name <- "Time on physical activity"
   
+=======
+
+>>>>>>> a04543310edff4108d03c16736ff4ec3e075ab2b
 ####################################Chart2#######################################################################
 new_dataframe <- originalDF %>% #changed "dataframe" to "originalDF"
   rename(Age = "What.is.your.age.",
@@ -59,12 +63,6 @@ new_dataframe <- originalDF %>% #changed "dataframe" to "originalDF"
          Preferred_type_of_communication = "Which.type.of.communication.do.you.generally.prefer.") %>% 
   select(Age,Social_media_accounts,Time_spent_on_social_media_in_a_day,Preferred_type_of_communication) %>% 
   group_by(Age)
-
-effects <- ggplot(new_dataframe, aes(x = Time_spent_on_social_media_in_a_day)) +
-    geom_bar() +
-  labs(title = "Time Spent on Social Media Per Day", x = "range of hours", y = "frequency")
-  
-effects <- ggplotly(effects)
 
 ####################################Chart3########################################################################
 
