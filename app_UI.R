@@ -33,6 +33,7 @@ ulList <-  shiny::tags$ol(
   shiny::tags$li("What age group spends the most time on social media throughout the day?"),
   shiny::tags$li("How much time is spent on physical activities?")
 )
+
 Intro_page <- tabPanel(
       titlePanel("Intro Page"),
       setBackgroundColor("lightblue"),
@@ -108,9 +109,51 @@ with age then slowly go back down after the age of 20.")),
         )
     )
 )
+
 Conclusion_Page <- tabPanel(
-  titlePanel("Conclusion")
+  titlePanel("Conclusion"),
+  setBackgroundColor("lightblue"),
+  h2("Conclusion"),
+  p("Everyday people are investing a large amount of their own time and
+  attention into social media. Our group analyized data to see how people are
+  spending their time on the internet and how their age groups affect their 
+  preffered method of communication. Looking at the data, we set out to answer
+  4 questions:"),
+  
+  h1("While using various social media, how does everyone stay in touch with 
+     each other?"),
+  p("Looking at the data, we can see that there are many ways that people use
+    use various social media to stay in touch. People use social media 
+    platforms like Instagram, Twitter, Facebook, Tiner, as well Snapchat and
+    many other platforms. But to stay in touch, you can see that they do not
+    only use social media. To communicate, people also use text, call, and 
+    communicate with people face to face."),
+ 
+   h1("Which social media platforms are most popular?"),
+  p("The data shows that the populatity of varius social media platforms change
+  depending on the age range that you are looking at. But overall, the social 
+  media platform that is the most popular is _____________.
+    "),
+
+    h1("What age group spends the most time on social media throughout the day
+       "),
+  p("The age group that spends the msot time on social media throughout the day
+  is _____________. 
+    "),
+
+    h1("How much time is spent on physical activities?"),
+  p("The amount of time  that is spent on physical activity is ________________.
+    
+    "),
+
+    h1("3 Major Takeaways"),
+  p("The three major takeaways that our group took from this project is that
+  
+  "),
+  img(src = "https://www.invoiceberry.com/blog/wp-content/uploads/2016/05/different_people_on_smartphones-e1462207780342.jpeg")
+  
 )
+
 ui <- fluidPage(
   navbarPage(
     "Application",
