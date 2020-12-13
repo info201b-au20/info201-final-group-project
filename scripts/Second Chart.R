@@ -1,7 +1,7 @@
 # Packages Used
-library(dplyr)
-library(ggplot2)
-library(tidyverse)
+library("dplyr")
+library("ggplot2")
+library("plotly")
 
 # Original Effects of Social Media Response table
 dataframe <- read.csv("https://raw.githubusercontent.com/info201b-au20/info201-final-group-project/gh-pages/Effects%20of%20Social%20Media%20(Responses).csv")
@@ -17,6 +17,9 @@ new_dataframe <- dataframe %>%
 effects <- ggplot(new_dataframe, aes(x = Time_spent_on_social_media_in_a_day)) +
     geom_bar() +
   labs(title = "Time Spent on Social Media Per Day", x = "range of hours", y = "frequency")
+  
+effects <- ggplotly(effects)
+effects
   
 # We included the chart to show on average how much time college aged students spend on social media per day
 
