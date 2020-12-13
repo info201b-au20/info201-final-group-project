@@ -214,25 +214,7 @@ Conclusion_Page <- tabPanel(
 
     shiny::tags$h3("3 Major Takeaways"),
   p("The three major takeaways that our group took from this project is:  "),
-<<<<<<< HEAD
   threetakeawaysList,
-=======
- 
-  h3("#1. It was suprizing to see that people still prefer face to face
-  communication. With so many available platforms to communicate,
-  it is nice to see that people are still prefer face to face communication."),
-
-  h3("#2. Between the ages 18-20, people prefer all types of communication
-  while ages between 14-18 and 21-23 both are age groups that prefer less than
-  half of the communication platforms."),
-  
-  h3("#3. 19 year olds have the highest amount of physical activity hours as well
-  as the highest amount of hours spent on social media. This was surprising as 
-  you would think people who spent lots of time on social media would not have 
-  much time spent on physical activity."),
-  
- 
->>>>>>> 8874d06c357d33dec14745ccb141745ce2b30e6f
   img(src = "https://www.invoiceberry.com/blog/wp-content/uploads/2016/05/different_people_on_smartphones-e1462207780342.jpeg")
   
 )
