@@ -98,7 +98,7 @@ Intro_page <- tabPanel(
       shiny::tags$br(),
       shiny::tags$br(),
       p(strong("Questions we seek to answer throughout the project:")),
-      ulList,
+      olList,
       shiny::tags$img(src = "https://belatina.com/wp-content/uploads/2020/06/thumbs_b_c_d5bcace83abc78617d9aecb992d4b4f8.jpg")
 
 )
@@ -112,7 +112,15 @@ Interactive_Page_1 <- tabPanel(
 			shows that about two thirds of college aged students (undergrad) spend what we'd call a reasonable amount
 			of time on social media per day. Conversley, the other third spend an excessive amount of time on social media.")),
     mainPanel(
-            plotlyOutput("socialmedia_vs_exercise")
+            plotlyOutput("socialmedia_vs_exercise"),
+			sliderInput(
+				"size",
+				label = "Size of soical media line", min = 1, max = 5, value = 2
+			),
+			sliderInput(
+				"size2",
+				label = "Size of physical activity point", min = 1, max = 5, value = 2
+			)
     )
   )
 )
