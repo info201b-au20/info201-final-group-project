@@ -205,7 +205,7 @@ Conclusion_Page <- tabPanel(
 
     shiny::tags$h3("3 Major Takeaways"),
   p("The three major takeaways that our group took from this project is:  "),
-  threetakeawaysList,
+  threetakeawaysList, #List of the 3 major takeaways from are project
   img(src = "https://www.invoiceberry.com/blog/wp-content/uploads/2016/05/different_people_on_smartphones-e1462207780342.jpeg")
   
 )
