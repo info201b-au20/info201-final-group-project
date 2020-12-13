@@ -74,7 +74,7 @@ color_input <- selectInput(
     choices = c("red", "green", "blue", "black", "purple")
 )
 
-ulList <-  shiny::tags$ol(
+olList <-  shiny::tags$ol(
   shiny::tags$li("While using various social media, how does everyone stay in touch with each other?"),
   shiny::tags$li("Which social media platforms are most popular?"),
   shiny::tags$li("What age group spends the most time on social media throughout the day?")
@@ -159,6 +159,18 @@ with age then slowly go back down after the age of 20.")),
     )
 )
 
+threetakeawaysList <- shiny::tags$ol(
+  shiny::tags$li(" It was suprizing to see that people still prefer face to face
+  communication. With so many available platforms to communicate,
+  it is nice to see that people still prefer face to face communication."),
+  shiny::tags$li("Between the ages 18-20, people prefer all types of communication
+  while ages between 14-18 and 21-23 both are age groups that prefer less than
+  half of the communication platforms."),
+  shiny::tags$li("19 years have the highest amount of physical activity hours as well
+  as the highest amount of hours spent on social media. This was surprising as 
+  you would think people who spent lots of time on social media would not have 
+  much time spent on physical activity.")
+)
 Conclusion_Page <- tabPanel(
   titlePanel("Conclusion"),
   h2("Conclusion"),
@@ -168,7 +180,7 @@ Conclusion_Page <- tabPanel(
   preffered method of communication. Looking at the data, we set out to answer
   4 questions:"),
   
-  h1("While using various social media, how does everyone stay in touch with 
+  shiny::tags$h3("While using various social media, how does everyone stay in touch with 
      each other?"),
   p("Looking at the data, we can see that there are many ways that people use
     use various social media to stay in touch. People use social media 
@@ -177,16 +189,19 @@ Conclusion_Page <- tabPanel(
     only use social media. To communicate, people also use text, call, and 
     communicate with people face to face."),
  
-   h1("Which social media platforms are the most popular?"),
+   shiny::tags$h3("Which social media platforms are the most popular?"),
   p("The data shows that some of the most popular social media platforms that 
   people are using are Youtube, Twitter, Instagram, and Snapchat."),
 
-    h1("What age group spends the most time on social media throughout the day? "),
+    shiny::tags$h3("What age group spends the most time on social media throughout the day? "),
   p("According to the servey, the age group that spends the most time on social
   media throughout the day is 19 year olds. "),
 
-    h1("3 Major Takeaways"),
+    shiny::tags$h3("3 Major Takeaways"),
   p("The three major takeaways that our group took from this project is:  "),
+<<<<<<< HEAD
+  threetakeawaysList,
+=======
  
   h3("#1. It was suprizing to see that people still prefer face to face
   communication. With so many available platforms to communicate,
@@ -202,6 +217,7 @@ Conclusion_Page <- tabPanel(
   much time spent on physical activity."),
   
  
+>>>>>>> 8874d06c357d33dec14745ccb141745ce2b30e6f
   img(src = "https://www.invoiceberry.com/blog/wp-content/uploads/2016/05/different_people_on_smartphones-e1462207780342.jpeg")
   
 )
