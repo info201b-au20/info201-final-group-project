@@ -211,7 +211,7 @@ Conclusion_Page <- tabPanel(
   while ages between 14-18 and 21-23 both are age groups that prefer less than
   half of the communication platforms."),
   
-  h3("#3. 19 years have the highest amount of physical activity hours as well
+  h3("#3. 19 year olds have the highest amount of physical activity hours as well
   as the highest amount of hours spent on social media. This was surprising as 
   you would think people who spent lots of time on social media would not have 
   much time spent on physical activity."),
