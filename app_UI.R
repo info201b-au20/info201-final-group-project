@@ -112,7 +112,15 @@ Interactive_Page_1 <- tabPanel(
 			shows that about two thirds of college aged students (undergrad) spend what we'd call a reasonable amount
 			of time on social media per day. Conversley, the other third spend an excessive amount of time on social media.")),
     mainPanel(
-            plotlyOutput("socialmedia_vs_exercise")
+            plotlyOutput("socialmedia_vs_exercise"),
+			sliderInput(
+				"size",
+				label = "Size of soical media line", min = 1, max = 5, value = 2
+			),
+			sliderInput(
+				"size2",
+				label = "Size of physical activity point", min = 1, max = 5, value = 2
+			)
     )
   )
 )
