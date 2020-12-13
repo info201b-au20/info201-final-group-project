@@ -112,7 +112,6 @@ with age then slowly go back down after the age of 20.")),
 
 Conclusion_Page <- tabPanel(
   titlePanel("Conclusion"),
-  setBackgroundColor("lightblue"),
   h2("Conclusion"),
   p("Everyday people are investing a large amount of their own time and
   attention into social media. Our group analyized data to see how people are
@@ -160,7 +159,7 @@ Conclusion_Page <- tabPanel(
 
 ui <- fluidPage(
   navbarPage(
-    "Application",
+    title = NULL,
     Intro_page,
     Interactive_Page_1,
     Interactive_Page_2,
