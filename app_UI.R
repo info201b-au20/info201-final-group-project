@@ -147,9 +147,13 @@ Conclusion_Page <- tabPanel(
     "),
 
     h1("3 Major Takeaways"),
-  p("The three major takeaways that our group took from this project is that
+  p("The three major takeaways that our group took from this project is:  "),
+ 
+  h3("#1. ____________ "),
+  h3("#2. ____________ "),
+  h3("#3. ____________ "),
   
-  "),
+ 
   img(src = "https://www.invoiceberry.com/blog/wp-content/uploads/2016/05/different_people_on_smartphones-e1462207780342.jpeg")
   
 )
