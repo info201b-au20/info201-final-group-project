@@ -48,10 +48,12 @@ total_Hours <- newDF %>%
   summarise(Total_Hours_Spent_For_Each_Age = sum(Hours_spent_on_social_media_in_a_day))
 
 
+socialMedia <- newDF %>% 
+  filter(Social_media_accounts == max(Social_media_accounts)) %>% 
+  pull(Social_media_accounts)
 
 
 
-  
 
   
 

@@ -30,8 +30,7 @@ color_input <- selectInput(
 ulList <-  shiny::tags$ol(
   shiny::tags$li("While using various social media, how does everyone stay in touch with each other?"),
   shiny::tags$li("Which social media platforms are most popular?"),
-  shiny::tags$li("What age group spends the most time on social media throughout the day?"),
-  shiny::tags$li("How much time is spent on physical activities?")
+  shiny::tags$li("What age group spends the most time on social media throughout the day?")
 )
 
 Intro_page <- tabPanel(
