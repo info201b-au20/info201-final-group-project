@@ -84,12 +84,12 @@ Interactive_Page_3 <- tabPanel(
     sidebarLayout(
         sidebarPanel(
             p("This simple scatter plot gives a precise visual about how different age groups
-ranging from 14-23 use social media to communicate. This chart was used to show
+ranging from 14 - 23 use social media to communicate. This chart was used to show
 the preferred methods of communication because it shows more than one way an
 an age group preferred to communicate. This makes it easier to see the trend of
 communication between different age groups. The trend of this chart shows that
 people between the ages of 18 - 19 prefer all the types of communication methods
-while age groups between 14- 16, and 21-3 tend to prefer half or less than half
+while age groups between 14 - 16, and 21 - 23 tend to prefer half or less than half
 to communicate. The different preferred types of communication types go up
 with age then slowly go back down after the age of 20.")),
         mainPanel(
@@ -128,28 +128,28 @@ Conclusion_Page <- tabPanel(
     communicate with people face to face."),
  
    h1("Which social media platforms are the most popular?"),
-  p("The data shows that the populatity of varius social media platforms change
-  depending on the age range that you are looking at. But overall, the social 
-  media platform that is the most popular is _____________.
-    "),
+  p("The data shows that some of the most popular social media platforms that 
+  people are using are Youtube, Twitter, Instagram, and Snapchat."),
 
-    h1("What age group spends the most time on social media throughout the day
-       "),
-  p("The age group that spends the most time on social media throughout the day
-  is _____________. 
-    "),
-
-    h1("How much time is spent on physical activities?"),
-  p("The amount of time  that is spent on physical activity is ________________.
-    
-    "),
+    h1("What age group spends the most time on social media throughout the day? "),
+  p("According to the servey, the age group that spends the most time on social
+  media throughout the day is 19 year olds. "),
 
     h1("3 Major Takeaways"),
   p("The three major takeaways that our group took from this project is:  "),
  
-  h3("#1. ____________ "),
-  h3("#2. ____________ "),
-  h3("#3. ____________ "),
+  h3("#1. It was suprizing to see that people still prefer face to face
+  communication. With so many available platforms to communicate,
+  it is nice to see that people are still prefer face to face communication."),
+
+  h3("#2. Between the ages 18-20, people prefer all types of communication
+  while ages between 14-18 and 21-23 both are age groups that prefer less than
+  half of the communication platforms."),
+  
+  h3("#3. 19 years have the highest amount of physical activity hours as well
+  as the highest amount of hours spent on social media. This was surprising as 
+  you would think people who spent lots of time on social media would not have 
+  much time spent on physical activity."),
   
  
   img(src = "https://www.invoiceberry.com/blog/wp-content/uploads/2016/05/different_people_on_smartphones-e1462207780342.jpeg")
