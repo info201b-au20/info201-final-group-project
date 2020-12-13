@@ -1,8 +1,9 @@
 library(plotly)
 
 server <- function(input, output, session) {
+  new_dataframe$id <- seq.int(nrow(new_dataframe))
 	output$socialmedia_vs_exercise <- renderPlotly({ 
-		ggplot(new_dataframe, aes(x = id)) + 
+		socialmedia_vs_exercise <- ggplot(new_dataframe, aes(x = id)) + 
 		geom_line(aes(y = Time_spent_on_social_media_in_a_day, color = "darkred"), size = input$size) + 
 		geom_point(aes(y = Time_spent_on_physical_activities_in_a_day, color="steelblue"), size = input$size2) +
 		scale_color_manual(values = c("darkred", "steelblue"), labels = c("Hours on social media", "Hours on physical activity")) +
