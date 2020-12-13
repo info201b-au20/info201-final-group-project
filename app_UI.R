@@ -41,7 +41,6 @@ new_dataframe <- arrange(new_dataframe, Time_spent_on_social_media_in_a_day)
 #Add column for row number
 new_dataframe$id <- seq.int(nrow(new_dataframe))
 
-<<<<<<< HEAD
 socialmedia_vs_exercise <- ggplot(new_dataframe, aes(x = id)) + 
   geom_line(aes(y = Time_spent_on_social_media_in_a_day, color = "darkred"), size = 3) + 
   geom_point(aes(y = Time_spent_on_physical_activities_in_a_day, color="steelblue"), size = 2) +
@@ -52,17 +51,17 @@ socialmedia_vs_exercise <- ggplot(new_dataframe, aes(x = id)) +
   socialmedia_vs_exercise$x$data[[1]]$name <- "Time on social media"
   socialmedia_vs_exercise$x$data[[2]]$name <- "Time on physical activity"
   
-=======
 
->>>>>>> a04543310edff4108d03c16736ff4ec3e075ab2b
 ####################################Chart2#######################################################################
 new_dataframe <- originalDF %>% #changed "dataframe" to "originalDF"
   rename(Age = "What.is.your.age.",
          Social_media_accounts = "Which.social.media.platform.s.do.you.like.the.most.or.use.the.most.",
          Time_spent_on_social_media_in_a_day = "How.much.time.do.you.spend.on.social.media.in.a.day.",
+         Time_spent_on_physical_activities_in_a_day = "How.much.time.do.you.spend.on.physical.activities.in.a.day.",
          Preferred_type_of_communication = "Which.type.of.communication.do.you.generally.prefer.") %>% 
-  select(Age,Social_media_accounts,Time_spent_on_social_media_in_a_day,Preferred_type_of_communication) %>% 
+  select(Age,Social_media_accounts,Time_spent_on_social_media_in_a_day,Preferred_type_of_communication, Time_spent_on_physical_activities_in_a_day) %>% 
   group_by(Age)
+  
 
 ####################################Chart3########################################################################
 
@@ -74,19 +73,8 @@ newDF <- originalDF %>%
     select(Age,Social_media_accounts,Time_spent_on_social_media_in_a_day,Preferred_type_of_communication) %>% 
     group_by(Age)
 
-age <- colnames(newDF)
-x_input <- selectInput(
-    "x_input",
-    label = "set age",
-    choices = age
-) 
 
-color_input <- selectInput(
-    inputId = "color_input",
-    label = "set color",
-    choices = c("red", "green", "blue", "black", "purple")
-)
-
+##################################################Intro page code#######################################################
 olList <-  shiny::tags$ol(
   shiny::tags$li("While using various social media, how does everyone stay in touch with each other?"),
   shiny::tags$li("Which social media platforms are most popular?"),
@@ -136,11 +124,16 @@ Interactive_Page_2 <- tabPanel(
     sidebarPanel(
             p("test")),
     mainPanel(
-            (plotlyOutput("effects")
+      plotlyOutput("effects"),
+      selectInput(
+      inputId = "x_axis",
+      label = "Change x-axis",
+      choices = c("Time_spent_on_social_media_in_a_day","Time_spent_on_physical_activities_in_a_day")
+      )
     )
   )
 )
-)
+
 
 Interactive_Page_3 <- tabPanel(
   titlePanel("Preferred method of communication for different age groups"),
