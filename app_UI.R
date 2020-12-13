@@ -98,7 +98,7 @@ Intro_page <- tabPanel(
       shiny::tags$br(),
       shiny::tags$br(),
       p(strong("Questions we seek to answer throughout the project:")),
-      ulList,
+      olList,
       shiny::tags$img(src = "https://belatina.com/wp-content/uploads/2020/06/thumbs_b_c_d5bcace83abc78617d9aecb992d4b4f8.jpg")
 
 )
