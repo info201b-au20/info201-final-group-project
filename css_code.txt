@@ -20,7 +20,7 @@ h3{
 }
 
 p {
-  font-family: arial;
+  font-family: "Source code pro", monospace;
   
 }
 
@@ -35,5 +35,10 @@ img{
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+a {
+  color: green;
+  text-decoration: underline;
 }
 

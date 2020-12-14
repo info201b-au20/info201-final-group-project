@@ -43,7 +43,7 @@ new_df_chart1$id <- seq.int(nrow(new_df_chart1))
 		geom_point(aes(y = Time_spent_on_physical_activities_in_a_day), color = "steelblue", size = input$size2) +
 		#scale_color_manual(values = c("darkred", "steelblue"), labels = c("Hours on social media", "Hours on physical activity")) +
 		labs(title = "Social media use vs physical activity", x = "Survey Entry ID (ordered from least to greatest by hours on social media)", y = "Hours")
-
+    
 	  
 	  
 		socialmedia_vs_exercise <- ggplotly(socialmedia_vs_exercise)
