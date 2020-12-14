@@ -20,7 +20,7 @@ h3{
 }
 
 p {
-  font-family: arial;
+  font-family: "Source code pro", monospace;
   
 }
 
