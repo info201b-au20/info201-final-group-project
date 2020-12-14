@@ -102,10 +102,11 @@ Interactive_Page_1 <- tabPanel(
   titlePanel("Social media use vs Physical activity per day"),
   sidebarLayout(
     sidebarPanel(
-            p("This chart shows, on average how much time college aged students spend on social media and physical
-			activity per day. The chart shows that almost no students spend zero time on social media. The chart also 
-			shows that about two thirds of college aged students (undergrad) spend what we'd call a reasonable amount
-			of time on social media per day. Conversley, the other third spend an excessive amount of time on social media.")),
+            p("This chart tests our hypothesis that there is an inverse correlation between amount of time spent social media 
+			and the amount of time spent on physical activity per day. The idea was that the more time one spends on social media
+			, the less time one has to be physically active. Since there is no easily discernable pattern in the chart
+			to the right, we have concluded that there is no correlation (neither positive or negative) between time spent on social
+			media and time spent of physical activity.")),
     mainPanel(
             plotlyOutput("socialmedia_vs_exercise"),
 			sliderInput(
@@ -125,7 +126,13 @@ Interactive_Page_2 <- tabPanel(
   titlePanel("Time on social media per day"),
   sidebarLayout(
     sidebarPanel(
-            p("test")),
+            p("This chart shows, on average, how much time college aged students spend on social media and physical
+			activity per day. Almost no students spend zero time on social media. About two thirds of college aged 
+			students spend what we would call a reasonable amount (0 - 2.5 hrs) of time on social media per day. 
+			Conversley, the other third spend an excessive amount of time (2.5+ hrs) on social media."),
+			p("This chart also shows that most college aged students spend at least the recommended amount of time (1 hr)
+			on physicial activity per day with only 15 percent of students getting, on average, no physical activity.")
+			),
     mainPanel(
       plotlyOutput("effects"),
       selectInput(
