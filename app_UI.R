@@ -93,8 +93,13 @@ Intro_page <- tabPanel(
       people invest their time and attention. In this project, we will be focusing on the different age groups' use of 
       various social media platforms, how they communicate and connect with each other, and how much time is spent on social media 
       throughout the day."),
+      shiny::tags$p("The data used for this project was collected through a user conducted survey by", strong("MAHEEP MAHAT")),
       shiny::tags$a(href="https://raw.githubusercontent.com/info201b-au20/info201-final-group-project/gh-pages/Effects%20of%20Social%20Media%20(Responses).csv", 
-                    "Click here to view the raw data from the dataset used for are visualizations"),
+                    "Click here to view the raw data from the dataset"),
+      shiny::tags$br(),
+      shiny::tags$br(),
+      shiny::tags$a(href = "https://data.world/maheepmahat/data-of-usage-of-social-media-by-students-between-age-17-22/workspace/file?filename=Effects+of+Social+Media+%28Responses%29.xlsx",
+                    "Click here to visit the page where we downloaded the dataset from"),
       shiny::tags$br(),
       shiny::tags$br(),
       p(strong("Questions we seek to answer throughout the project:")),

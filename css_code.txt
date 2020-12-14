@@ -37,3 +37,8 @@ img{
   width: 50%;
 }
 
+a {
+  color: green;
+  text-decoration: underline;
+}
+
