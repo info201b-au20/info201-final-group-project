@@ -97,7 +97,7 @@ Intro_page <- tabPanel(
       shiny::tags$img(src = "https://belatina.com/wp-content/uploads/2020/06/thumbs_b_c_d5bcace83abc78617d9aecb992d4b4f8.jpg")
 
 )
-  
+
 Interactive_Page_1 <- tabPanel(
   titlePanel("Social media use vs Physical activity per day"),
   sidebarLayout(
@@ -111,11 +111,11 @@ Interactive_Page_1 <- tabPanel(
             plotlyOutput("socialmedia_vs_exercise"),
 			sliderInput(
 				"size",
-				label = "Size of soical media line", min = 1, max = 5, value = 2
+				label = shiny::tags$h4("Size of soical media line (darkred)"), min = 1, max = 5, value = 2
 			),
 			sliderInput(
 				"size2",
-				label = "Size of physical activity point", min = 1, max = 5, value = 2
+				label = shiny::tags$h5("Size of physical activity points (steelblue)"), min = 1, max = 5, value = 2
 			)
     )
   )
@@ -123,7 +123,7 @@ Interactive_Page_1 <- tabPanel(
 
 
 Interactive_Page_2 <- tabPanel(
-  titlePanel("Time on social media per day"),
+  titlePanel("Total count of time on social media vs physical activity hours"),
   sidebarLayout(
     sidebarPanel(
             p("This chart shows, on average, how much time college aged students spend on social media and physical
@@ -139,6 +139,12 @@ Interactive_Page_2 <- tabPanel(
         "x_axis",
         label = "Change x-axis",
         choices = c("Time_spent_on_physical_activities_in_a_day","Time_spent_on_social_media_in_a_day")
+      ),
+      selectInput(
+        "color",
+        label = "choose color",
+        choices = c("red","blue","yellow","green"),
+        selected = "blue"
       )
     )
   )

@@ -15,6 +15,15 @@ h3{
   color: #ad1d28;
 }
 
+h4{
+  color: darkred;
+}
+
+
+h5{
+  color: steelblue;
+}
+
 .navbar-default {
   background-color: lightblue;
 }
