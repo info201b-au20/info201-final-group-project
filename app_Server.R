@@ -1,5 +1,10 @@
 library(plotly)
-
+library(shiny)
+library(plotly)
+library(tidyverse)
+library(ggplot2)
+library(shinyWidgets)
+library("RColorBrewer")
 server <- function(input, output, session) {
   originalDF <- read.csv("https://raw.githubusercontent.com/info201b-au20/info201-final-group-project/gh-pages/Effects%20of%20Social%20Media%20(Responses).csv")
 
